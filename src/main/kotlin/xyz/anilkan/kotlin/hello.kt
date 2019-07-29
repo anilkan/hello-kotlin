@@ -9,8 +9,8 @@ fun sayHello() {
     println("Hello Kotlin !")
     println("My first number is $a, square of my first number is ${a * a}")
 
-    val b = randomNumberNull()
-    if (b != null) // randomNumberNull null değer döndürebildiğinde b değerini kullanmadan önce null kontrolü yapmak zorundayız.
+    val b = notRandomNumberNull()
+    if (b != null) // notRandomNumberNull null değer döndürebildiğinde b değerini kullanmadan önce null kontrolü yapmak zorundayız.
         println("My second number is $b, square of my second number is ${b * b}")
     else
         println("My second number is null !")
@@ -20,6 +20,6 @@ fun notRandomNumber(): Int {
     return 3
 }
 
-fun randomNumberNull(): Int? {
+fun notRandomNumberNull(): Int? {
     return null
 }
